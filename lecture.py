@@ -20,6 +20,7 @@ def read(entryFile):
        T = entry[5]
     
     return [R, C, F, N, B, T]
+    
    
 if __name__ == '__main__':
     
