@@ -17,7 +17,6 @@ def read(entryFile):
     with open(entryFile,'r') as raw_exemple:
        data = raw_exemple.read().split('\n')
        entry = data[0].split(' ')                              # Entrée dans le code
-       print entry
        R = entry[0]
        C = entry[1]
        F = entry[2]
@@ -40,7 +39,6 @@ if __name__ == '__main__':
     
     entryFile = '../input_data/a_example.in'
     sortie = read(entryFile)
-    print sortie
     
     outputFile = '../jc/out.out'
     outputData = [[1,2], [3,4], [4,5]]
