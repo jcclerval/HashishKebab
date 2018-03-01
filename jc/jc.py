@@ -20,4 +20,3 @@ entree = '../input_data/b_should_be_easy.in'
 
 [R, C, F, N, B, T] = read(entree)
 
-print R

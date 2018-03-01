@@ -5,13 +5,11 @@ Created on Thu Mar 01 19:14:56 2018
 @author: Jean-Christophe
 """
 
-def getScore(a,b,x,y):
+def getDistance(a,b,x,y):
     return (abs(y-b) + abs(y-x))
 
 def getLatestStart(a,b,x,y,s,f):
-    distance = getScore(a,b,x,y)
-    
-    return f - distance
+    return f - getDistance(a,b,x,y)
     
 def read(entryFile):
     with open(entryFile,'r') as raw_exemple:
