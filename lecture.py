@@ -21,9 +21,22 @@ def read(entryFile):
     
     return [R, C, F, N, B, T]
     
+def writeScore(outputData, outputFile):
+    with open(outputFile, 'w') as outFile:
+        for element in outputData:
+            a = str(len(element))
+            for ride in element:
+                a = a + ' ' + str(ride)
+            outFile.write(a+'\n')
+    return 0
    
 if __name__ == '__main__':
     
     entryFile = 'input_data/a_example.in'
     sortie = read(entryFile)
     print sortie
+    
+    outputFile = 'jc/out.out'
+    outputData = [[1,2], [3,4], [4,5]]
+    
+    writeScore(outputData, outputFile)
